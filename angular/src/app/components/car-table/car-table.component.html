@@ -1,0 +1,24 @@
+<table class="table table-striped-columns mt-2 table">
+        <thead>
+            <tr>
+                <th class="p-3 text-bg-primary">VIN</th>
+                <th class="p-3 text-bg-primary">ODÔMETRO</th>
+                <th class="p-3 text-bg-primary">NIVEL DE COMBUSTIVEL</th>
+                <th class="p-3 text-bg-primary">STATUS</th>
+                <th class="p-3 text-bg-primary">LAT</th>
+                <th class="p-3 text-bg-primary">LONG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="p-3 text-bg-primary">
+                    <input type="text" placeholder="{{ vin }}" value="{{ vin }}">
+                </td>
+                <td class="p-3 text-bg-primary">{{ odometro }} KM</td>
+                <td class="p-3 text-bg-primary">{{ nivelCombustivel }}%</td>
+                <td class="p-3 text-bg-primary">{{ status.toUpperCase() }}</td>
+                <td class="p-3 text-bg-primary">{{ lat }}</td>
+                <td class="p-3 text-bg-primary">{{ long }}</td>
+            </tr>
+        </tbody>
+    </table>
