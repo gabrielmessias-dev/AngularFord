@@ -1,33 +1,66 @@
-<app-menu />
-
-<h1 class="text-center mb-4 mt-3 text-primary">Dashboard da Ford</h1>
-
-<section class="d-flex gap-5 justify-content-center">
-    <div class="card text-bg-primary mb-3 p-2" style="max-width: 18rem;">
-        <div class="card-header"><h5 class="card-title">Veiculos</h5></div>
-        <select class="form-select form-select-sm" aria-label="Small select example" (change)="onChangeSelect($event)">
-            @for (v of veiculos; track v.id) {
-                <option value="{{ v.id }}">{{ v.vehicle }}</option>
-            }
-        </select>
+<div class="dashboard-container">
+  <app-menu></app-menu>
+  
+  <header class="dashboard-header">
+    <div class="header-content">
+      <h1 class="dashboard-title">Dashboard Ford</h1>
     </div>
+  </header>
 
-    <app-card [titulo]="'Total de Vendas'" [valor]="veiculoSelecionado.volumetotal"/>
-    <app-card [titulo]="'Conectados'" [valor]="veiculoSelecionado.connected"/>
-    <app-card [titulo]="'Upd. Software'" [valor]="veiculoSelecionado.softwareUpdates"/>
-</section>
+  <section class="stats-section">
+    <div class="vehicle-selector-card">
+      <h3 class="card-title">Veículo Selecionado</h3>
+      <select class="vehicle-select" (change)="onChangeSelect($event)">
+        @for (v of veiculos; track v.id) {
+          <option value="{{ v.id }}">{{ v.vehicle }}</option>
+        }
+      </select>
+    </div>
+    
+    <div class="stats-grid">
+      <app-card 
+        [titulo]="'Total de Vendas'" 
+        [valor]="veiculoSelecionado.volumetotal"
+        
+        [cor]="'success'">
+      </app-card>
+      
+      <app-card 
+        [titulo]="'Conectados'" 
+        [valor]="veiculoSelecionado.connected"
+        
+        [cor]="'info'">
+      </app-card>
+      
+      <app-card 
+        [titulo]="'Upd. Software'" 
+        [valor]="veiculoSelecionado.softwareUpdates"
+        
+        [cor]="'warning'">
+      </app-card>
+    </div>
+  </section>
 
-<section class="mt-3 text-center">
-    <img class="img-fluid" src="{{ veiculoSelecionado.img }}" alt="Imagem do Veiculo Selecionado">
-</section>
+  <section class="vehicle-section">
+    <div class="vehicle-info">
+      <h2 class="vehicle-name">{{ veiculoSelecionado.vehicle }}</h2>
+    </div>
+    <div class="vehicle-image-container">
+      <img 
+        class="vehicle-image" 
+        [src]="veiculoSelecionado.img" 
+        [alt]="'Imagem do ' + veiculoSelecionado.vehicle">
+    </div>
+  </section>
 
-<section *ngIf="vinPronto">
+  <section class="data-section" *ngIf="vinPronto">
     <app-car-table 
-    [vin]="veiculoSelecionado.vin" 
-    [lat]="vinInfos.lat" 
-    [long]="vinInfos.long" 
-    [odometro]="vinInfos.odometro" 
-    [nivelCombustivel]="vinInfos.nivelCombustivel" 
-    [status]="vinInfos.status" />
-</section>
-
+      [vin]="veiculoSelecionado.vin"
+      [lat]="vinInfos.lat"
+      [long]="vinInfos.long"
+      [odometro]="vinInfos.odometro"
+      [nivelCombustivel]="vinInfos.nivelCombustivel"
+      [status]="vinInfos.status">
+    </app-car-table>
+  </section>
+</div>

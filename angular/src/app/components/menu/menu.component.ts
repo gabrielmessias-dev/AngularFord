@@ -21,4 +21,8 @@ export class MenuComponent {
   goToHome() {
     this.router.navigate(['/home'])
   }
+
+  get currentRoute(): string {
+  return this.router.url;
+}
 }
