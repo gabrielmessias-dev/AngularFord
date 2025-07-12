@@ -3,6 +3,7 @@ import { Component, inject, Input } from '@angular/core';
 @Component({
   selector: 'app-car-table',
   imports: [],
+  standalone: true,
   templateUrl: './car-table.component.html',
   styleUrl: './car-table.component.css'
 })
