@@ -5,11 +5,12 @@ import { CarTableComponent } from "../../components/car-table/car-table.componen
 import { DashboardService } from '../../services/dashboard.service';
 import { Veiculo, VinInfos } from '../../models/car';
 import { MenuComponent } from '../../components/menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CardComponent, CommonModule, CarTableComponent, MenuComponent],
+  imports: [CardComponent, CommonModule, CarTableComponent, MenuComponent, FormsModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -78,4 +79,38 @@ export class DashboardComponent implements OnInit {
   onChangeVinInfos(vinInfos: VinInfos) {
     this.vinInfos = vinInfos
   }
+
+buscarVinDigitado(vin: string) {
+  this.DashboardService.getVinInfos(vin).subscribe({
+    next: (vinInfos) => {
+      this.vinInfos = vinInfos;
+      this.vinPronto = true;
+
+      const veiculoCorrespondente = this.veiculos.find(v => v.vin === vin);
+
+      if (veiculoCorrespondente) {
+        this.veiculoSelecionado = veiculoCorrespondente;
+      } else {
+        
+        this.veiculoSelecionado = {
+          id: -1,
+          connected: 0,
+          volumetotal: 0,
+          softwareUpdates: 0,
+          vin: vin,
+          img: '',
+          vehicle: 'Desconhecido'
+        };
+      }
+
+      this.cdr.detectChanges();
+    },
+    error: () => {
+      alert("VIN não encontrado");
+    }
+  });
+}
+
+
+
 }

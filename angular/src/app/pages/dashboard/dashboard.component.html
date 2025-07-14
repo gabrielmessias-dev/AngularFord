@@ -60,7 +60,8 @@
       [long]="vinInfos.long"
       [odometro]="vinInfos.odometro"
       [nivelCombustivel]="vinInfos.nivelCombustivel"
-      [status]="vinInfos.status">
+      [status]="vinInfos.status"
+      (buscarVin)="buscarVinDigitado($event)">
     </app-car-table>
   </section>
 </div>

@@ -18,7 +18,13 @@
       <tbody>
         <tr>
           <td>
-            <code class="vin-code">{{ vin }}</code>
+            <input
+  type="text"
+  class="vin-code-input"
+  [(ngModel)]="vinDigitado"
+  (keyup.enter)="buscarPorVin()"
+  placeholder="Digite o VIN e pressione Enter"
+/>
           </td>
           <td>{{ odometro }} KM</td>
           <td>
