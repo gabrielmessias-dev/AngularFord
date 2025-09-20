@@ -104,20 +104,22 @@ O projeto ficará disponível em:
 
 ---
 
-## 🖼️ Demonstração (prints)
+## 🖼️ Demonstração
 
-🖼️ Demonstração
+### Tela de Login
+![Login](prints/inicio-dashboard.png)
 
-Tela de Login
-<img src="./prints/inicio-dashboard.png" width="600">
-Página Home
-<img src="./prints/home-padrao.png" width="600">
-Dashboard - Mustang
-<img src="./prints/dashboard-veiculo.png" width="600">
-Dashboard - Ranger
-<img src="./prints/dashboard-veic-2.png" width="600">
-Menu Lateral
-<img src="./prints/menu-hamburguer.png" width="400">
+### Página Home
+![Home](prints/home-padrao.png)
+
+### Dashboard - Mustang
+![Dashboard Mustang](prints/dashboard-veiculo.png)
+
+### Dashboard - Ranger
+![Dashboard Ranger](prints/dashboard-veic-2.png)
+
+### Menu Lateral
+![Menu](prints/menu-hamburguer.png)
 
 ---
 
