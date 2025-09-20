@@ -118,6 +118,7 @@ Dashboard - Ranger
 <img src="/prints/dashboard-veic-2.png" width="600">
 Menu Lateral
 <img src="/prints/menu-hamburguer.png" width="400">
+
 ---
 
 ## 📜 Licença
