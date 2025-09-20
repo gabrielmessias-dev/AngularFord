@@ -106,24 +106,18 @@ O projeto ficará disponível em:
 
 ## 🖼️ Demonstração (prints)
 
-Coloque as imagens na pasta `prints/` (na raiz do repositório) e utilize os nomes abaixo ou ajuste conforme necessário:
+🖼️ Demonstração
 
-- `prints/inicio-dashboard.png`  — Tela de Login
-- `prints/home-padrao.png`      — Página Home
-- `prints/dashboard-veiculo.png` — Dashboard (ex.: Mustang)
-- `prints/dashboard-veic-2.png`  — Dashboard (ex.: Ranger)
-- `prints/menu-hamburguer.png`   — Menu lateral aberto
-
-No README use as referências abaixo para exibir as imagens:
-
-```markdown
-![Login](./prints/inicio-dashboard.png)
-![Home](./prints/home-padrao.png)
-![Dashboard Mustang](./prints/dashboard-veiculo.png)
-![Dashboard Ranger](./prints/dashboard-veic-2.png)
-![Menu](./prints/menu-hamburguer.png)
-```
-
+Tela de Login
+<img src="./prints/inicio-dashboard.png" width="600">
+Página Home
+<img src="./prints/home-padrao.png" width="600">
+Dashboard - Mustang
+<img src="./prints/dashboard-veiculo.png" width="600">
+Dashboard - Ranger
+<img src="./prints/dashboard-veic-2.png" width="600">
+Menu Lateral
+<img src="./prints/menu-hamburguer.png" width="400">
 ---
 
 ## 📜 Licença
