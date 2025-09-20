@@ -58,7 +58,7 @@ ANGULARFORD-ENTER/
 
 ### 1️⃣ Clonar o repositório
 ```bash
-git clone https://github.com/gabrielmessias-dev/ford-dashboard.git
+git clone https://github.com/gabrielmessias-dev/dashboardVeiculos_Angular.git
 ```
 
 ### 2️⃣ Instalar dependências
