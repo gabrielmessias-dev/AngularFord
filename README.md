@@ -109,15 +109,15 @@ O projeto ficará disponível em:
 🖼️ Demonstração
 
 Tela de Login
-<img src="./prints/inicio-dashboard.png" width="600">
+<img src="/prints/inicio-dashboard.png" width="600">
 Página Home
-<img src="./prints/home-padrao.png" width="600">
+<img src="/prints/home-padrao.png" width="600">
 Dashboard - Mustang
-<img src="./prints/dashboard-veiculo.png" width="600">
+<img src="/prints/dashboard-veiculo.png" width="600">
 Dashboard - Ranger
-<img src="./prints/dashboard-veic-2.png" width="600">
+<img src="/prints/dashboard-veic-2.png" width="600">
 Menu Lateral
-<img src="./prints/menu-hamburguer.png" width="400">
+<img src="/prints/menu-hamburguer.png" width="400">
 ---
 
 ## 📜 Licença
