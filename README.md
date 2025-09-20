@@ -112,10 +112,10 @@ O projeto ficará disponível em:
 ### Página Home
 ![Home](prints/home-padrao.png)
 
-### Dashboard - Mustang
+### Dashboard - Ranger
 ![Dashboard Mustang](prints/dashboard-veiculo.png)
 
-### Dashboard - Ranger
+### Dashboard - Mustang
 ![Dashboard Ranger](prints/dashboard-veic-2.png)
 
 ### Menu Lateral
